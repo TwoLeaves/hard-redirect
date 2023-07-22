@@ -1,7 +1,7 @@
 const redirectList = [
-    { id: 1, label: "google -> startpage", from: "https://www.google.com(.*)", to: "https://www.startpage.com\\1", enabled: false },
-    { id: 2, label: "youtube -> piped", from: "(.*)youtube.com(.*)", to: "https://piped.kavin.rocks\\2", enabled: true },
-    { id: 3, label: "reddit -> libreddit", from: "(.*)reddit.com(.*)", to: "https://libredd.it\\2", enabled: true },
+    { id: 1, label: "reddit -> old.reddit", from: "^https?://www\.reddit\.com/(.*)", to: "https://old.reddit.com/\\1", enabled: true },
+    { id: 2, label: "twitter -> nitter", from: "^https?://twitter\.com/(.*)", to: "https://nitter.lacontrevoie.fr/\\1", enabled: true },
+    { id: 3, label: "quora -> quetre", from: "^https?://www\.quora\.com/(.*)", to: "https://quetre.iket.me/\\1", enabled: true },
 ]
 
 let localRedirectList
