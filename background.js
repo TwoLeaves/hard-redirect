@@ -6,6 +6,7 @@ const redirectList = [
     { id: 5, label: "twitter -> nitter", from: "^https?://twitter\.com/(.*)", to: "https://nitter.cz/\\1", enabled: true },
     { id: 6, label: "quora -> quetre", from: "^https?://www\.quora\.com/(.*)", to: "https://quetre.iket.me/\\1", enabled: true },
     { id: 7, label: "bitsearch -> bitsearch-sorted", from: "^https?://bitsearch\.to/search\\?q=([^&]*)$", to: "https://bitsearch\.to/search?sort=seeders&q=\\1", enabled: true },
+    { id: 8, label: "google with bang -> duck", from: "^https?://www\.google\.com/search\\?q=(.*(?:%21|!).*)$", to: "https://duckduckgo\.com/?kae=d&ks=n&k1=-1&kl=au-en&kz=1&ku=-1&kp=-2&kaq=-1&kam=google-maps&kaj=m&k5=2&kw=n&kah=au-en&kao=1&kak=-1&kk=-1&kad=en_AU&q=\\1", enabled: true },
 ]
 //{ id: 7, label: "bitsearch -> bitsearch-sorted", from: "https?://bitsearch\.to/search\\?q=([a-zA-Z0-9]+)$", to: "https://bitsearch\.to/search?sort=seeders&q=\\1", enabled: true },
 
