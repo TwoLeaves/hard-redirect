@@ -1,8 +1,12 @@
 const redirectList = [
-    { id: 1, label: "reddit -> old.reddit", from: "^https?://www\.reddit\.com/(.*)", to: "https://old.reddit.com/\\1", enabled: true },
-    { id: 2, label: "twitter -> nitter", from: "^https?://twitter\.com/(.*)", to: "https://nitter.lacontrevoie.fr/\\1", enabled: true },
-    { id: 3, label: "quora -> quetre", from: "^https?://www\.quora\.com/(.*)", to: "https://quetre.iket.me/\\1", enabled: true },
+    { id: 1, label: "reddit/r -> old.reddit/r", from: "^https?://www\.reddit\.com/r/(.*)", to: "https://old.reddit.com/r/\\1", enabled: true },
+    { id: 2, label: "reddit/u -> old.reddit/u", from: "^https?://www\.reddit\.com/u(.*)", to: "https://old.reddit.com/u\\1", enabled: true },
+    { id: 3, label: "reddit/u/top -> old.reddit/u/top", from: "^https?://(?:.*)\.reddit\.com/(?:u|user)/(.*)/submitted/$", to: "https://old.reddit.com/user/\\1/submitted/?sort=top", enabled: true },
+    { id: 4, label: "reddit/r/top -> old.reddit/r/top", from: "^https?://(?:.*)\.reddit\.com/r/(.*)/top/$", to: "https://old.reddit.com/r/\\1/top/?sort=top&t=all", enabled: true },
+    { id: 5, label: "twitter -> nitter", from: "^https?://twitter\.com/(.*)", to: "https://nitter.cz/\\1", enabled: true },
+    { id: 6, label: "quora -> quetre", from: "^https?://www\.quora\.com/(.*)", to: "https://quetre.iket.me/\\1", enabled: true },
 ]
+//{ id: 7, label: "bitsearch -> bitsearch-sorted", from: "https?://bitsearch\.to/search\\?q=([a-zA-Z0-9]+)$", to: "https://bitsearch\.to/search?sort=seeders&q=\\1", enabled: true },
 
 let localRedirectList
 
