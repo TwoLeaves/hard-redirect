@@ -5,6 +5,7 @@ const redirectList = [
     { id: 4, label: "reddit/r/top -> old.reddit/r/top", from: "^https?://(?:.*)\.reddit\.com/r/(.*)/top/$", to: "https://old.reddit.com/r/\\1/top/?sort=top&t=all", enabled: true },
     { id: 5, label: "twitter -> nitter", from: "^https?://twitter\.com/(.*)", to: "https://nitter.cz/\\1", enabled: true },
     { id: 6, label: "quora -> quetre", from: "^https?://www\.quora\.com/(.*)", to: "https://quetre.iket.me/\\1", enabled: true },
+    { id: 7, label: "bitsearch -> bitsearch-sorted", from: "^https?://bitsearch\.to/search\\?q=([^&]*)$", to: "https://bitsearch\.to/search?sort=seeders&q=\\1", enabled: true },
 ]
 //{ id: 7, label: "bitsearch -> bitsearch-sorted", from: "https?://bitsearch\.to/search\\?q=([a-zA-Z0-9]+)$", to: "https://bitsearch\.to/search?sort=seeders&q=\\1", enabled: true },
 
